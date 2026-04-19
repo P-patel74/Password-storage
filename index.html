@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Manager</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>Password Manager</h1>
+
+      <div id="page1">
+        <p>Manage all your password in one place...</p>
+        <hr />
+        <p>Are you an/a......</p>
+        <p><button id="existing_user">Existing user</button></p>
+        <button id="new_user">New user</button>
+      </div>
+
+      <div id="page2">
+        <p>Log in...</p>
+        <p>Username:</p>
+        <input id="existing_username" type="text" />
+        <p>Password</p>
+        <input id="existing_pass" type="text" />
+        <button id="log_in" type="text">Log In</button>
+      </div>
+      <div id="page3">
+        <p>Sign up...</p>
+        <p>Username:</p>
+        <input id="new_username" type="text" />
+        <p>Password:</p>
+        <input id="new_pass" type="text" /><span
+          id="pass_strength_password"></span>
+        <p>Confirm Password:</p>
+        <input id="conf_pass" type="text" />
+        <p><button id="sign_up">Sign Up</button></p>
+      </div>
+      <div id="mainpage">
+        <button id="new_pass_button">Add new password</button>
+        <button id="remove_lastpass_button">Remove last Password</button>
+        <button id="remove_pass_button">Remove specific password</button>
+        <button id="pass_search_button">Search for password</button>
+        <button id="empty_list_button">Empty List</button>
+        <p><input id="search_bar" placeholder="Search..." /></p>
+      </div>
+
+      <div id="output"></div>
+    </div>
+  </body>
+</html>
+
+<div id="password_list"></div>
